@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 0.41rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Playwrite+RO:wght@100..400&display=swap');
+:root{ 
+--primary-color:#6366F1;
+--accent-color:#3f83f8;
+--text-color:#333333;
+--link-color:#2563eb;
+--background-color:#ffffff;
+--light-gray:#f0f0f0;
+--gray: #808080;
+--dark-gray:#555;
+}
+
+.feature-container{
+  background-color: var(--light-gray);
+  padding: 2rem 0;
+  text-align: center;
+}
+.feature-content{
+    max-width: 850px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title-content{
+ color: var(--gray);
+    font-size: 1rem;
+}
+
+.feature-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1.5rem;
+    margin-top: 1rem; 
+}
+.feature-svg{
+    width:1.5rem ;
+}
+.icon-container{
+    background-color: var(--background-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6366F1;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.feature-title{
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem ;
+
+}
+
+.feature-description{
+    color: white;
+}
+.feature-card:nth-child(1){
+    background-color: #4a90e2;
+}
+.feature-card:nth-child(2){
+    background-color: #ff6289;
+}
+.feature-card:nth-child(3){
+    background-color: #fcbf58;
+}
+.feature-card:nth-child(4){
+    background-color: #44bfc3;
+}
+.feature-card:nth-child(5){
+    background-color: #77b05d;
+}
+.feature-card:nth-child(6){
+    background-color: #7d78b1;
+}
+
+@media screen and (max-width:768px) {
+    .feature-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
